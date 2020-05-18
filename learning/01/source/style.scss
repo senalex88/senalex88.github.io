@@ -9,12 +9,12 @@ body {
 }
 
 h2 {
-   @include adaptive-font(30, 20);
+   @include adaptive-font(30, 30);
    margin-bottom: 30px;
 }
 
 h1 {
-   @include adaptive-font(57, 24);
+   @include adaptive-font(57, 57);
    letter-spacing: 0.3px;
    margin-left: -3px;
    margin-bottom: 33px;
@@ -37,7 +37,7 @@ h1 {
       padding: 43px 0px;
 
       li {
-         @include adaptive-font(20, 14);
+         @include adaptive-font(20, 20);
          line-height: 36px;
          background-image: url("../img/top/check icon.png");
          background-repeat: no-repeat;
@@ -75,7 +75,7 @@ h1 {
          max-width: 50%;
          p {
             padding-bottom: 20px;
-            @include adaptive-font(14, 12);
+            @include adaptive-font(14, 14);
             line-height: 22px;
          }
          p:last-child() {
@@ -85,8 +85,10 @@ h1 {
    }
 
    &__img-wrapper {
-      width: 430px;
-      height: 245px;
+      min-width: 430px;
+      min-height: 245px;
+      max-width: 430px;
+      max-height: 245px;
       background-color: $bg;
 
       img {
@@ -107,6 +109,11 @@ h1 {
       justify-content: space-between;
       padding: 50px 0px;
 
+      h2 {
+         width: 100%;
+         text-align: center;
+      }
+
       div {
          max-width: 50%;
          margin: -11px;
@@ -119,14 +126,64 @@ h1 {
             background-position: 0 7px;
             background-size: 25px 25px;
             padding-left: 45px;
-            @include adaptive-font(14, 12);
+            @include adaptive-font(14, 14);
             line-height: 22px;
          }
       }
+   }
+}
+
+.block3 {
+   background-color: white;
+   color: $bg;
+
+   &__wrapper {
+      display: flex;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 50px 0px;
 
       h2 {
          width: 100%;
          text-align: center;
+      }
+   }
+
+   &__item {
+      width: 50%;
+   }
+
+   .item {
+      display: flex;
+      margin: -8px;
+      padding: 8px;
+      padding-top: 32px;
+
+      &__image {
+         min-width: 200px;
+         min-height: 152px;
+         max-width: 200px;
+         max-height: 152px;
+         background-color: $bg;
+         margin-right: 16px;
+
+         img {
+            width: 100%;
+         }
+      }
+
+      &__text {
+         h3 {
+            @include adaptive-font(24, 24);
+            margin-bottom: 20px;
+         }
+
+         p {
+            @include adaptive-font(14, 14);
+            line-height: 26px;
+         }
       }
    }
 }
