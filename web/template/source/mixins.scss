@@ -1,0 +1,12 @@
+// Adaptive fonts from 320px to 1280px
+//
+// Example uses: @include adaptive-font(40, 24);
+// Result will: font-size: 40px;
+
+$maxWidth: 1280;
+
+@mixin adaptive-font($pcSize, $mobSize) {
+   $addSize: $pcSize - $mobSize;
+   $maxWidth: $maxWidth - 320;
+   font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
