@@ -579,3 +579,197 @@ h1 {
   -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 }
+
+.block6 {
+  padding: 50px 30px;
+  background-color: #445162;
+  color: white;
+  text-align: center;
+}
+
+.block6__form {
+  width: 500px;
+}
+
+.block6__form form {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .block6__form form {
+    font-size: calc(16px + 0 * ((100vw - 320px) / 1280));
+  }
+}
+
+@media (min-width: 767px) {
+  .block6__form form {
+    font-size: calc(16px + 0 * (100vw / 1280));
+  }
+}
+
+.block6__form input {
+  width: 100%;
+  margin-bottom: 21px;
+  padding: 10px 14px;
+  border-radius: 5px;
+  color: #445162;
+}
+
+.block6__form input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.block6__form input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.block6__form input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.block6__form input:focus::placeholder {
+  color: transparent;
+}
+
+.block6__form textarea {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 21px;
+  padding: 10px 14px;
+  border-radius: 5px;
+  color: #445162;
+}
+
+.block6__form textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.block6__form textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.block6__form textarea:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.block6__form textarea:focus::placeholder {
+  color: transparent;
+}
+
+.block6__form button {
+  padding: 14px 48px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #445162;
+}
+
+.block6__links {
+  width: 300px;
+}
+
+@media (max-width: 767px) {
+  .block6__links {
+    font-size: calc(16px + 0 * ((100vw - 320px) / 1280));
+  }
+}
+
+@media (min-width: 767px) {
+  .block6__links {
+    font-size: calc(16px + 0 * (100vw / 1280));
+  }
+}
+
+.block6__links .social {
+  display: inline-block;
+  padding: 0 1px;
+  margin-top: 33px;
+}
+
+.block6__links .social img {
+  width: 42px;
+  height: 42px;
+}
+
+.block6__links ul {
+  text-align: start;
+}
+
+.block6__links .messanger {
+  padding-bottom: 10px;
+  text-align: initial;
+}
+
+.block6__links .messanger:nth-child(1)::before {
+  content: url("../img/block/skype_icon.png");
+}
+
+.block6__links .messanger:nth-child(2)::before {
+  content: url("../img/block/icq_icon.png");
+}
+
+.block6__links .messanger:nth-child(3)::before {
+  content: url("../img/block/email_icon.png");
+}
+
+.block6__links .messanger:nth-child(4)::before {
+  content: url("../img/block/phone_icon.png");
+}
+
+.block6__links .messanger::before {
+  padding-right: 5px;
+  position: relative;
+  top: 6px;
+  height: 28px;
+}
+
+.block6__links.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.block6 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.block6 .flex div {
+  margin: 0 10px;
+  padding: 0 -10px;
+}
+
+.block7 {
+  text-align: center;
+  color: #445162;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .block7 {
+    font-size: calc(12px + 0 * ((100vw - 320px) / 1280));
+  }
+}
+
+@media (min-width: 767px) {
+  .block7 {
+    font-size: calc(12px + 0 * (100vw / 1280));
+  }
+}
