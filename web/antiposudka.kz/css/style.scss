@@ -8,20 +8,29 @@ $clrWhite: #fff;
 $fntComfortaa: "Comfortaa", cursive;
 $fntUbuntu: "Ubuntu", sans-serif;
 
+html,
+body {
+   font-family: $fntUbuntu;
+   font-weight: 500;
+   font-size: 14px;
+   color: $clrNavy;
+}
 .main-wrapper {
    max-width: 980px;
    width: 100%;
    margin: 0 auto;
 }
 .site-menu {
-}
-.menu-item {
-}
-.logo {
-}
-.location {
-}
-.site-nav {
-}
-.nav-item {
+   display: flex;
+   justify-content: space-between;
+   .menu-item {
+   }
+   .shop-description {
+      display: flex;
+   }
+   .site-nav {
+      display: flex;
+   }
+   .nav-item {
+   }
 }

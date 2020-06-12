@@ -1,6 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap");
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2d3c72;
+}
+
 .main-wrapper {
   max-width: 980px;
   width: 100%;
   margin: 0 auto;
+}
+
+.site-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.site-menu .shop-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-menu .site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
