@@ -8,6 +8,10 @@ $clrWhite: #fff;
 $fntComfortaa: "Comfortaa", cursive;
 $fntUbuntu: "Ubuntu", sans-serif;
 
+* {
+   box-sizing: border-box;
+}
+
 html,
 body {
    font-family: $fntUbuntu;
@@ -32,5 +36,73 @@ body {
       display: flex;
    }
    .nav-item {
+   }
+}
+
+.catalog-menu {
+   display: flex;
+   justify-content: flex-end;
+   .menu-item {
+   }
+}
+
+.board {
+   max-width: 100%;
+   width: 100%;
+   max-height: 70vh;
+   height: 70vh;
+   display: flex;
+   justify-content: flex-end;
+   .board-offer {
+      max-width: 30%;
+      width: 30%;
+      display: flex;
+      align-items: center;
+      div {
+         position: relative;
+         left: 50%;
+      }
+   }
+   .board-image {
+      height: 100%;
+      flex-grow: 1;
+   }
+}
+
+.product-offer {
+   .product-nav {
+      ul {
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+   .product-slide {
+      display: flex;
+      justify-content: space-around;
+      .item {
+         flex-grow: 0;
+         flex-shrink: 0;
+         .item-image {
+            width: 100%;
+            height: 100%;
+            background-color: gray;
+         }
+         .item-header {
+         }
+         .item-description {
+         }
+         .item-state {
+         }
+         .item-price {
+         }
+      }
+   }
+   .product-slide::before {
+      content: "<";
+      align-self: center;
+   }
+   .product-slide::after {
+      content: ">";
+      align-self: center;
    }
 }
